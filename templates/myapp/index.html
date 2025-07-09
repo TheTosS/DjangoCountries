@@ -1,0 +1,27 @@
+{% extends "myapp/base.html" %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+<div class="hero-section text-center">
+    <h1 class="display-4">Добро пожаловать!</h1>
+    <p class="lead">World Countries</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>О нас</h2>
+        <p>Краткое описание вашего проекта или компании.</p>
+        <a href="{% url 'countries_list' %}" class="btn btn-primary mt-3">Список стран</a>
+    </div>
+    <div class="col-md-4">
+        <h2>Новости</h2>
+        <p>Последние обновления и новости проекта.</p>
+        <a href="{% url 'languages' %}" class="btn btn-info mt-3">Языки</a>
+    </div>
+    <div class="col-md-4">
+        <h2>Контакты</h2>
+        <p>Как с нами связаться.</p>
+    </div>
+</div>
+{% endblock %}

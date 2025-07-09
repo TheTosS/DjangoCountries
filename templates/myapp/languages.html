@@ -1,0 +1,14 @@
+{% extends "myapp/base.html" %}
+
+{% block title %}Список языков{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="mb-4">Список всех языков</h1>
+    <ol class="list-group list-group-numbered">
+        {% for language in languages %}
+        <li class="list-group-item">{{ language }}</li>
+        {% endfor %}
+    </ol>
+</div>
+{% endblock %}

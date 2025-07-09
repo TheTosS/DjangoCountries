@@ -18,7 +18,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include  # Добавляем include
 
+from myapp.views import countries_list
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+
     path('', include('myapp.urls')),  # Подключаем URLs приложения countries
+    path('countries-list/', countries_list, name='countries_list'),
 ]
