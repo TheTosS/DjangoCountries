@@ -10,10 +10,10 @@ def load_countries():
 def get_country_by_name(name):
     countries = load_countries()
     for country in countries:
-<<<<<<< HEAD
+
         if country['country'].lower() == name.lower():
-=======
-        if country['name'].lower() == name.lower():
->>>>>>> 875e986d4b38cb490cd3c20f313159aa7ee76d8d
+
+
+
             return country
     return None
