@@ -1,10 +1,18 @@
 {% extends "myapp/base.html" %}
 
+<<<<<<< HEAD
 {% block title %}{{ country }}{% endblock %}
 
 {% block content %}
 <div class="container mt-4">
     <h1>{{ country }}</h1>
+=======
+{% block title %}{{ country.name }}{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1>{{ country.name }}</h1>
+>>>>>>> 875e986d4b38cb490cd3c20f313159aa7ee76d8d
     <h4>Языки:</h4>
     <ul class="list-group">
         {% for language in country.languages %}
