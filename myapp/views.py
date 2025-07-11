@@ -52,7 +52,7 @@ def country_detail(request, country_name):
     country = get_country_by_name(country_name)
     if not country:
         raise Http404("Страна не найдена")
-    return render(request, 'myapp/country_detail.html', {'country': country})
+    return render(request, 'myapp/country_detail.html', {'country': country })
 
 # Create your views here.
 
