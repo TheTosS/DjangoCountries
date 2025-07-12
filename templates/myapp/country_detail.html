@@ -1,10 +1,11 @@
 {% extends "myapp/base.html" %}
 
-{% block title %}{{ country }}{% endblock %}
+{% block title %}{{ country.country }}{% endblock %}
 
 {% block content %}
 <div class="container mt-4">
-    <h1>{{ country }}</h1>
+    <h1>{{ country.country }}</h1>
+
     <h4>Языки:</h4>
     <ul class="list-group">
         {% for language in country.languages %}
