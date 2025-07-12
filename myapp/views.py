@@ -3,11 +3,7 @@
 from django.views.generic import TemplateView
 import json
 
-from django.shortcuts import render
-from django.conf import settings
-import os
-from .utils import load_countries, get_country_by_name
-from django.http import Http404
+
 
 
 class HomeView(TemplateView):
